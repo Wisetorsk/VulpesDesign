@@ -35,6 +35,8 @@ and (min-width: 1024px) { /*Anything larger*/
         font-size: 300%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     li.nav {
@@ -46,9 +48,10 @@ and (min-width: 1024px) { /*Anything larger*/
     #topHeader {
         display: grid;
         grid-template-columns: 1fr 6fr;
-        grid-template-rows: 150px;
+        grid-template-rows: 100px;
         position: fixed;
         background-color: sandybrown;
+        border-radius: 0px 20px 20px 0px;
     }
 
     #headerImage {
@@ -67,7 +70,11 @@ and (min-width: 1024px) { /*Anything larger*/
         display: grid;
         grid-row-gap: 50px;
         padding-top: 150px;
-        grid-template: 'headerImage headerImage' 'cardDisplay cardDisplay' 'pageText windowSpace' 'footerImage footerImage' 'footerContent footerContent';
+        grid-template: 'headerImage headerImage headerImage'
+                        'cardDisplay cardDisplay cardDisplay'
+                        'pageText pageText windowSpace' 
+                        'footerImage footerImage footerImage' 
+                        'footerContent footerContent footerContent';
     }
 
     #headerImageHolder {
@@ -89,7 +96,7 @@ and (min-width: 1024px) { /*Anything larger*/
         border: 2px dashed white;
         background-image: url(http://placekitten.com/450/400);
         background-repeat: no-repeat;
-        width: 450px;
+        min-width: 450px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -107,7 +114,6 @@ and (min-width: 1024px) { /*Anything larger*/
         border: 5px solid white;
         height: 500px;
         margin-left: 100px;
-        max-width: 768px;
     }
 
     #windowSpace {
@@ -123,20 +129,26 @@ and (min-width: 1024px) { /*Anything larger*/
     #footerContent {
         grid-area: footerContent;
         display: grid;
+        grid-template: 'leftFooter leftFooter centerFooter rightFooter rightFooter';
         border: 5px solid white;
-
+        background-color: white;
     }
 
     #footerContentLeft {
-        float: left;
+        grid-area: leftFooter;
+        text-align: center;
+        border: 2px dashed black;
     }
 
     #footerContentCenter {
-
+        grid-area: centerFooter;
+        text-align: center;
     }
 
-    #footerContentRight{
-        float: right;
+    #footerContentRight {
+        grid-area: rightFooter;
+        text-align: center;
+        border: 2px dashed black;
     }
 }
 
