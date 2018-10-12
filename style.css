@@ -1,6 +1,16 @@
-/* Mobile first development!!! */
+
 body {
-    background-color: forestgreen;
+    background-image: url(img/background.jpg);
+    background-size: auto auto;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
 
 @media only screen 
@@ -19,6 +29,114 @@ and (orientation : portrait) { /* iPad in portrait mode */
 
 @media screen 
 and (min-width: 1024px) { /*Anything larger*/
-    
+    ul#navBar {
+        list-style: none;
+        color: black;
+        font-size: 300%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    li.nav {
+        display: inline;
+        padding-right: 50px;
+        text-align: center;
+    }
+
+    #topHeader {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 150px;
+        position: fixed;
+        background-color: sandybrown;
+    }
+
+    #headerImage {
+        width: 1800px;
+        
+    }
+
+    #headerLogo {
+        width: 200px;
+        height: 75px;
+        background-color: white;
+        margin-right: 300px;
+    }
+
+    #mainContent {
+        display: grid;
+        grid-row-gap: 50px;
+        padding-top: 150px;
+        grid-template: 'headerImage headerImage' 'cardDisplay cardDisplay' 'pageText windowSpace' 'footerImage footerImage' 'footerContent footerContent';
+    }
+
+    #headerImageHolder {
+        grid-area: headerImage;
+        border: 5px solid white;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #cardDisplay {
+        display: grid;
+        grid-template-columns: 1fr 6fr 6fr 6fr 1fr;
+        grid-template-rows: 400px;
+        grid-area: cardDisplay;
+        border: 5px solid white;
+    }
+
+    .card {
+        border: 2px dashed white;
+        background-image: url(http://placekitten.com/450/400);
+        background-repeat: no-repeat;
+        width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .arrow {
+        font-size: 500%;
+        color: white;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #pageText {
+        grid-area: pageText;
+        border: 5px solid white;
+        height: 500px;
+        margin-left: 100px;
+        max-width: 768px;
+    }
+
+    #windowSpace {
+        grid-area: windowSpace;
+        
+    }
+
+    #footerImage {
+        grid-area: footerImage;
+        border: 5px solid white;
+    }
+
+    #footerContent {
+        grid-area: footerContent;
+        display: grid;
+        border: 5px solid white;
+
+    }
+
+    #footerContentLeft {
+        float: left;
+    }
+
+    #footerContentCenter {
+
+    }
+
+    #footerContentRight{
+        float: right;
+    }
 }
 
