@@ -1,7 +1,7 @@
 
-body {
+.background-element {
     background-image: url(img/background.jpg);
-    background-size: auto auto;
+    background-size: 100% auto;
 }
 
 .link {
@@ -29,6 +29,8 @@ and (orientation : portrait) { /* iPad in portrait mode */
 
 @media screen 
 and (min-width: 1024px) { /*Anything larger*/
+
+
     ul#navBar {
         list-style: none;
         color: black;
