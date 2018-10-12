@@ -1,0 +1,5 @@
+
+*.sqlite
+*.config
+.vs/VulpesDesign/v15/.suo
+.vs/ProjectSettings.json
