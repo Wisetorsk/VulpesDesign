@@ -13,7 +13,7 @@
         <div class="background-element" id="background">
             <div class="header fixed top" id="topHeader">
                 <div id="headerLogo">
-                    <img id="logo" src="http://placekitten.com/300/100" />
+                    <img id="logo" src="http://placekitten.com/200/60" />
                 </div>
                 <ul id="navBar" class="navBar">
                     <li class="nav" id="homeHeader"><a href="" class="nav link">Hjem</a></li>
@@ -65,7 +65,12 @@
                         <ul id="left">
                             <li>element</li>
                             <li>element</li>
-                            <li>element</li>
+                            <li>
+                                <form action="" id="newsletterForm">
+                                    Newsletter: <input type="text" name="email" id="newsletterInput"><br>
+                                    <input type="submit" value="Subscribe" id="newsletterButton">
+                                </form>
+                            </li>
                         </ul>
                     </div>
                     <div class="footer" id="footerContentCenter">
@@ -74,16 +79,17 @@
                             <li> <a href="#section1">Hjem</a> </li>
                             <li>Om</li>
                             <li>Butikk</li>
-                            <li>Kontakt</li>
                         </ul>
                     </div>
                     <div class="footer" id="footerContentRight">
                         Kontakt<hr />
-                        <ul id="right">
-                            <li>element</li>
-                            <li>element</li>
-                            <li>element</li>
-                        </ul>
+                        <address id="footerAddress">
+                            <ul id="right">
+                                <li><a href="mailto:ida.m.brennodden@gmail.com">&#xa9;Vulpes Design</a></li>
+                                <li>+47 333 22 333</li>
+                                <li><button id="facebookButton">Facebook</button><button id="instagramButton">Instagram</button></li>
+                            </ul>
+                        </address>
                     </div>
                 </div>
             </div>
