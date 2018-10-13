@@ -7,14 +7,16 @@ var lastScrollTop = 0;
             if (st > lastScrollTop){
                 // downscroll code
                 yPosition -= amount;
-                console.log('Scroll Down');
+                //console.log('Scroll Down');
                 document.getElementsByTagName('body')[0].style.backgroundPositionY = yPosition + "px";
             } else {
                 // upscroll code
                 yPosition += amount;
-                console.log('Scroll Up');
+                //console.log('Scroll Up');
                 document.getElementsByTagName('body')[0].style.backgroundPositionY = yPosition+"px";
 
             }
             lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-            }, false);
+}, false);
+
+

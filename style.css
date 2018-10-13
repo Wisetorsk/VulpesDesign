@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-image: url(img/background.jpg);
@@ -119,6 +122,10 @@ and (min-width: 1024px) { /*Anything larger*/
         font-size: 600%;
     }
 
+    .footer {
+        /*margin-top: 50px;*/
+    }
+
     #topHeader {
         display: grid;
         grid-template: 'headerLogo navBar navBar navBar navBar navBar';
@@ -136,19 +143,20 @@ and (min-width: 1024px) { /*Anything larger*/
     #headerLogo {
         width: 200px;
         height: 75px;
-        background-color: white;
-        margin-right: 300px;
+        /*background-color: white;*/
+        margin-right: 100px;
     }
 
     #mainContent {
         display: grid;
         grid-row-gap: 50px;
         padding-top: 150px;
-        grid-template: 'headerImage headerImage headerImage'
-                        'cardDisplay cardDisplay cardDisplay'
-                        'pageText pageText windowSpace' 
-                        'footerImage footerImage footerImage' 
-                        'footerContent footerContent footerContent';
+        grid-template: 'headerImage headerImage headerImage headerImage' 
+                        'cardDisplay cardDisplay cardDisplay cardDisplay' 
+                        'pageText pageText pageText windowSpace' 
+                        'pageText pageText pageText windowSpcae' 
+                        'footerImage footerImage footerImage footerImage' 
+                        'footerContent footerContent footerContent footerContent';
     }
 
     #headerImageHolder {
@@ -187,8 +195,8 @@ and (min-width: 1024px) { /*Anything larger*/
         border-radius:20px;
         background-color: white;
         height: 500px;
-        margin-left: 100px;
-        max-width: 900px;
+        margin-left: 200px;
+        max-width: 1000px;
         font-size: 200%;
         padding: 20px;
     }
