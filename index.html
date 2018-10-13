@@ -30,13 +30,13 @@
                         <
                     </div>
                     <div class="card" id="card1">
-                        KORT
+                        
                     </div>
                     <div class="card" id="card2">
-                        KORT
+                        
                     </div>
                     <div class="card" id="card3">
-                        KORT
+                        
                     </div>
                     <div class="arrow" id="rightArrow">
                         >
@@ -58,44 +58,31 @@
                 </div>
                 <div class="footer" id="footerContent">
                     <div class="footer" id="footerContentLeft">
-                        <ul id="left">
-                            <li></li>
+                        <ul id="left"><hr />
+                            <li>element</li>
+                            <li>element</li>
+                            <li>element</li>
                         </ul>
                     </div>
                     <div class="footer" id="footerContentCenter">
-                        <ul id="center">
-                            <li></li>
+                        <ul id="center"><hr />
+                            <li>element</li>
+                            <li>element</li>
+                            <li>element</li>
                         </ul>
                     </div>
                     <div class="footer" id="footerContentRight">
-                        <ul id="right">
-                            <li></li>
+                        <ul id="right"><hr />
+                            <li>element</li>
+                            <li>element</li>
+                            <li>element</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <script>
-            var lastScrollTop = 0;
-            var yPosition = 0;
-            var amount = 10;
-            // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-            window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
-            var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-            if (st > lastScrollTop){
-                // downscroll code
-                yPosition -= amount;
-                console.log('Scroll Down');
-                document.getElementsByTagName('body')[0].style.backgroundPositionY = yPosition + "px";
-            } else {
-                // upscroll code
-                yPosition += amount;
-                console.log('Scroll Up');
-                document.getElementsByTagName('body')[0].style.backgroundPositionY = yPosition+"px";
-
-            }
-            lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-            }, false);
+            
 
         </script>
     </body>

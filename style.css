@@ -5,6 +5,66 @@ body {
     background-position-y: 0px;
 }
 
+#topHeader {    
+    background-color: sandybrown;
+}
+
+#headerLogo {
+    grid-area: headerLogo;
+}
+
+#navBar {
+    grid-area: navBar;
+}
+
+#headerImage {
+    grid-area: headerImage;
+}
+
+#headerLogo {
+    grid-area: headerLogo;
+}
+
+#mainContent {
+
+}
+
+#headerImageHolder {
+    grid-area: headerImage;
+}
+
+#cardDisplay {
+    grid-area: cardDisplay;
+}
+
+#pageText {
+    grid-area: pageText;
+}
+
+#windowSpace {
+    grid-area: windowSpace;
+}
+
+#footerImage {
+    grid-area: footerImage;
+}
+
+#footerContent {
+    grid-area: footerContent;
+}
+
+#footerContentLeft {
+    grid-area: leftFooter;
+}
+
+#footerContentCenter {
+    grid-area: centerFooter;
+}
+
+#footerContentRight {
+    grid-area: rightFooter;
+}
+
 .link {
     text-decoration: none;
     color: black;
@@ -12,6 +72,13 @@ body {
 
 .link:hover {
     text-decoration: underline;
+}
+
+.footer > ul{
+    list-style: none;
+    font-size: 300%;
+    padding-left: 0px;
+    display: inside;
 }
 
 @media only screen 
@@ -48,12 +115,16 @@ and (min-width: 1024px) { /*Anything larger*/
         text-align: center;
     }
 
+    .arrow:hover {
+        font-size: 600%;
+    }
+
     #topHeader {
         display: grid;
-        grid-template-columns: 1fr 6fr;
+        grid-template: 'headerLogo navBar navBar navBar navBar navBar';
+        width: 98%;
         grid-template-rows: 100px;
         position: fixed;
-        background-color: sandybrown;
         border-radius: 0px 20px 20px 0px;
     }
 
@@ -81,7 +152,6 @@ and (min-width: 1024px) { /*Anything larger*/
     }
 
     #headerImageHolder {
-        grid-area: headerImage;
         border: 5px solid white;
         margin-right: auto;
         margin-left: auto;
@@ -91,8 +161,9 @@ and (min-width: 1024px) { /*Anything larger*/
         display: grid;
         grid-template-columns: 1fr 6fr 6fr 6fr 1fr;
         grid-template-rows: 400px;
-        grid-area: cardDisplay;
         border: 5px solid white;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     .card {
@@ -113,27 +184,23 @@ and (min-width: 1024px) { /*Anything larger*/
     }
 
     #pageText {
-        grid-area: pageText;
-        border: 5px dashed black;
+        border-radius:20px;
         background-color: white;
         height: 500px;
         margin-left: 100px;
         max-width: 900px;
         font-size: 200%;
+        padding: 20px;
     }
 
     #windowSpace {
-        grid-area: windowSpace;
-        
     }
 
     #footerImage {
-        grid-area: footerImage;
         border: 5px solid white;
     }
 
     #footerContent {
-        grid-area: footerContent;
         display: grid;
         grid-template: 'leftFooter leftFooter centerFooter rightFooter rightFooter';
         grid-template-rows: 300px;
@@ -142,20 +209,17 @@ and (min-width: 1024px) { /*Anything larger*/
     }
 
     #footerContentLeft {
-        grid-area: leftFooter;
         text-align: center;
-        border: 2px dashed black;
+        border-right: 2px dashed black;
     }
 
     #footerContentCenter {
-        grid-area: centerFooter;
         text-align: center;
     }
 
     #footerContentRight {
-        grid-area: rightFooter;
         text-align: center;
-        border: 2px dashed black;
+        border-left: 2px dashed black;
     }
 }
 
