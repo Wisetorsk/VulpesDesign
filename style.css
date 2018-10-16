@@ -226,7 +226,7 @@ and (min-width: 1024px) { /*Anything larger*/
         height: 500px;
         margin-left: 200px;
         max-width: 1000px;
-        font-size: 200%;
+        font-size: 150%;
         padding: 20px;
         box-shadow: 15px 15px 75px 15px black;
     }
