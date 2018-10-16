@@ -123,6 +123,7 @@ and (min-width: 1024px) { /*Anything larger*/
 
     .footer {
         /*margin-top: 50px;*/
+        background: rgba(222, 216, 216, 0.5);
     }
 
     #topHeader {
@@ -168,7 +169,8 @@ and (min-width: 1024px) { /*Anything larger*/
         display: grid;
         grid-template-columns: 1fr 6fr 6fr 6fr 1fr;
         grid-template-rows: 400px;
-        border: 5px solid white;
+        background: rgba(193, 193, 193, 0.49);
+        border-radius: 15px;
         margin-left: 50px;
         margin-right: 50px;
     }
@@ -180,6 +182,10 @@ and (min-width: 1024px) { /*Anything larger*/
         min-width: 450px;
         margin-right: auto;
         margin-left: auto;
+        opacity: 1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 20px 20px 75px 15px black;
     }
 
     .arrow {
@@ -198,13 +204,41 @@ and (min-width: 1024px) { /*Anything larger*/
         max-width: 1000px;
         font-size: 200%;
         padding: 20px;
+        box-shadow: 15px 15px 75px 15px black;
     }
 
     #windowSpace {
+
+    }
+
+    #newsletterForm {
+
+    }
+
+    #newsletterInput {
+        margin-bottom: auto;
+        margin-top: auto;
+        height: 30px;
+    }
+
+    #newsletterButton {
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    #instagramButton {
+
+    }
+
+    #facebookButton {
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
     }
 
     #footerImage {
-        border: 5px solid white;
+        border-radius: 5px;
     }
 
     #footerContent {
@@ -212,7 +246,7 @@ and (min-width: 1024px) { /*Anything larger*/
         grid-template: 'leftFooter leftFooter centerFooter rightFooter rightFooter';
         grid-template-rows: 300px;
         border: 5px solid white;
-        background-color: white;
+        border-radius: 15px;
     }
 
     #footerContentLeft {
