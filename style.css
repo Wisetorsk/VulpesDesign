@@ -119,10 +119,11 @@ and (min-width: 1024px) { /*Anything larger*/
 
     .arrow:hover {
         font-size: 600%;
-        border: 1px solid grey;
+        /*border: 1px solid grey;
         box-shadow: 20px 10px 75px 5px black;
-        border-radius: 10px;
+        border-radius: 10px;*/
         cursor: pointer;
+        text-shadow: 2px 6px 8px #000;
     }
 
     .card:hover {
