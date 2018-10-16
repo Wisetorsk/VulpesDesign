@@ -125,6 +125,15 @@ and (min-width: 1024px) { /*Anything larger*/
         cursor: pointer;
     }
 
+    .card:hover {
+        cursor: pointer;
+        /*box-shadow: none;*/
+        min-width: 470px;
+        max-height: 313px;
+        background-size: 470px;
+        margin-top: 30px;
+    }
+
     .footer {
         background: rgba(222, 216, 216, 0.5);
     }

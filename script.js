@@ -35,3 +35,8 @@ function main() {
         insertCard(cardObjs[i], cards[i].src);
     }
 }
+
+
+/*
+ * Kort på fremsiden viser bare motivet. Kunden kan klikke på kortet for å få opp en side med mer detaljert informasjon.
+ */
