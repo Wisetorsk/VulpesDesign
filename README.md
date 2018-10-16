@@ -1,1 +1,2 @@
 # VulpesDesign
+<p>Inkluder knapper for ulike bakgrunnsstemninger. Hvert kort vises på forsiden, hvis brukeren trykker på kortet kommer brukeren til en ny side med bilde og bildeteksten, samt også mulighet for å kjøpe designet. Siden skal også ha DropDown meny.</p>
