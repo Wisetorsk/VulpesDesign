@@ -228,7 +228,7 @@ and (min-width: 1024px) { /*Anything larger*/
     }
 
     #instagramButton {
-
+        border-radius: 5px;
     }
 
     #facebookButton {
@@ -238,7 +238,6 @@ and (min-width: 1024px) { /*Anything larger*/
     }
 
     #footerImage {
-        border-radius: 5px;
     }
 
     #footerContent {
