@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url(img/background.jpg);
+    background-image: url(img/BakgrunnLOW.png);
     background-size: 100% auto;
     background-position-y: 0px;
 }
@@ -119,10 +119,13 @@ and (min-width: 1024px) { /*Anything larger*/
 
     .arrow:hover {
         font-size: 600%;
+        border: 1px solid grey;
+        box-shadow: 20px 10px 75px 5px black;
+        border-radius: 10px;
+        cursor: pointer;
     }
 
     .footer {
-        /*margin-top: 50px;*/
         background: rgba(222, 216, 216, 0.5);
     }
 
@@ -135,16 +138,13 @@ and (min-width: 1024px) { /*Anything larger*/
         border-radius: 0px 20px 20px 0px;
     }
 
-    #headerImage {
-        width: 1800px;
-        
-    }
 
     #headerLogo {
-        width: 200px;
+        width: 60px;
         height: 60px;
-        /*background-color: white;*/
         margin-right: 100px;
+        background-image: url(img/logo.png);
+        background-size: 60px;
     }
 
     #mainContent {
@@ -160,9 +160,20 @@ and (min-width: 1024px) { /*Anything larger*/
     }
 
     #headerImageHolder {
-        border: 5px solid white;
+        width: 1800px;
+        height: 200px;
+        background-position-y: 800px;
         margin-right: auto;
         margin-left: auto;
+        overflow: hidden;
+        background-image: url("img/forside.jpg");
+    }
+
+    img.logo2 {
+        width: 200px;
+        height: 200px;
+        max-height: 100%;
+        max-width: 100%;
     }
 
     #cardDisplay {
@@ -176,20 +187,23 @@ and (min-width: 1024px) { /*Anything larger*/
     }
 
     .card {
-        border: 2px dashed white;
-        background-image: url(http://placekitten.com/450/400);
+        /* border: 2px dashed white; */
+        /*background-image: url(http://placekitten.com/450/400);*/
         background-repeat: no-repeat;
         min-width: 450px;
+        max-height: 300px;
+        background-size: 450px;
         margin-right: auto;
         margin-left: auto;
         opacity: 1;
-        margin-top: 10px;
+        margin-top: 40px;
         margin-bottom: 10px;
         box-shadow: 20px 20px 75px 15px black;
     }
 
     .arrow {
         font-size: 500%;
+        font-weight: bolder;
         color: white;
         text-align: center;
         margin-top: auto;
@@ -238,6 +252,11 @@ and (min-width: 1024px) { /*Anything larger*/
     }
 
     #footerImage {
+        background-image: url(img/footerLine.png);
+        width: 1800px;
+        height: 100px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     #footerContent {
